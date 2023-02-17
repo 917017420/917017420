@@ -40,7 +40,8 @@ export function request(url = '', params = {}, type = 'POST') {
         if (type.toUpperCase() === 'GET') {
             promise = axios({
                 url,
-                params
+                params,
+                method: 'GET',
             })
         } else if (type.toUpperCase() === 'POST') {
             promise = axios({

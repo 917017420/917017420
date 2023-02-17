@@ -7,6 +7,6 @@ export default  {
     },
     
     async getcaptchaImage(params){
-        return request('/api/captcha/captchaImage', params, 'get')
+        return request('/api/captcha/captchaImage?type=' + params, '', 'get')
     }
 }

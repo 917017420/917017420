@@ -1,12 +1,15 @@
 <script setup>
 </script>
 <template>
-  <div>
+  <div class="view-div">
     <router-view></router-view>
   </div>
   
 </template>
 
-<style scoped>
- 
+<style lang="less" scoped>
+  .view-div{
+    height: 100%;
+    width: 100%;
+  }
 </style>
